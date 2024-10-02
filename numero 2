@@ -1,0 +1,16 @@
+def pertence_fibonacci(n):
+    fib_a = 0
+    fib_b = 1
+    if n == 0 or n == 1:
+        return f"O número {n} pertence à sequência de Fibonacci."
+
+    while fib_b < n:
+        fib_a, fib_b = fib_b, fib_a + fib_b
+        
+    if fib_b == n:
+        return f"O número {n} pertence à sequência de Fibonacci."
+    else:
+        return f"O número {n} não pertence à sequência de Fibonacci."
+
+numero = 5
+print(pertence_fibonacci(numero))
